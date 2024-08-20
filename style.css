@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+  scrollbar-color: #0d88d4 #000000;
+}
+body {
+  background: linear-gradient(10deg, #000000, #0d88d4);
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+}
+.profile-card {
+  background: rgba(0, 0, 0, 0.8);
+  width: 400px;
+  padding: 3rem;
+  border-radius: 10px;
+  min-height: 400px;
+  position: relative;
+  color: #fff;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  margin: 0 0 0 25%;
+  width: 50%;
+  height: auto;
+}
+h2 {
+  text-align: center;
+}
+.profile-card .profile-pic img {
+  border-radius: 10px;
+}
+.profile-card .profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.profile-details .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-details .intro h2 {
+  margin-top: 20px;
+}
+.profile-details .intro h4 {
+  background: rgba(41, 40, 40, 0.6);
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 8px;
+}
+
+.profile-details .social {
+  display: flex;
+}
+.profile-details .social div {
+  margin: 10px;
+  background: #000000;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+
+.profile-details .social div:hover {
+  scale: 1.2;
+  background: #333;
+  border: 1px solid #0d88d4;
+}
+
+.profile-details a img {
+  margin: 8px 0 0 7px;
+  width: 25px;
+  height: 25x;
+}
+.profile-details .contact-info {
+  background-color:transparent;
+  padding: 15px;
+  border-radius: 10px;
+  width: 109%;
+}
+.profile-details .contact-info .row {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.row .content {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.contact-info .row .icon {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+.row .icon:hover {
+  scale: 1.2;
+  background: #333;
+  border: 1px solid #0d88d4;
+}
+.row .content {
+  min-width: 70%;
+}
+.row .content span {
+  font-size: 12px;
+}
+.download-btn {
+  background: #0d88d4;
+  font-size: 17px;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  border: none;
+  transition: 0.5s;
+}
+a .download-btn {
+  text-decoration: none;
+  color: #ffffff;
+}
+.download-btn:hover {
+  scale: 1.1;
+  border: 2px solid #0d88d4;
+  background-color: #333;
+}
+/*****about section ****/
+.about {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 800px;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.about h1 {
+  color: #f2f2f2;
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem;
+}
+.about h2 {
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.about p {
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+.about p a {
+  color: #0d88d4;
+}
+.about p a:hover {
+  color: blueviolet;
+}
+
+.about .work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+.work .workbox {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding: 1rem;
+  margin: 1rem;
+  transition: 0.5s;
+}
+.work .workbox:hover {
+  border: 1px solid #0d88d4;
+  background: transparent;
+  scale: 1.1;
+}
+.work .workbox .icon img {
+  margin: 0 20px 0 10px;
+  height: 70px;
+  width: 50px;
+}
+.work .workbox .desc {
+  width: 75%;
+  color: #555;
+}
+.work .workbox .desc h3 {
+  color: #f2f2f2;
+  margin-bottom: 3px;
+}
+.work .workbox .desc p {
+  margin: 0px;
+}
+/***Responsive Design ***/
+@media (max-width: 768px) {
+  .about {
+    width: 1005;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .about h1 {
+    font-size: 2.2rem;
+  }
+  .about .work {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
