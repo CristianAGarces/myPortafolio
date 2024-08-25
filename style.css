@@ -213,7 +213,7 @@ a .download-btn {
 /***Responsive Design ***/
 @media (max-width: 800px) {
   .profile-card {
-    max-width: 380px;
+    max-width: 360px;
     padding: 3rem;
     margin: 1rem;
   }
