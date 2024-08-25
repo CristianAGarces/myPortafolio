@@ -191,7 +191,7 @@ a .download-btn {
 }
 .work .workbox:hover {
   border: 1px solid #0d88d4;
-  background: transparent;
+  background: rgba(41, 40, 40, 0.6);
   scale: 1.1;
 }
 .work .workbox .icon img {
