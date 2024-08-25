@@ -90,7 +90,7 @@ h2 {
   height: 25x;
 }
 .profile-details .contact-info {
-  background-color:transparent;
+  background-color: transparent;
   padding: 15px;
   border-radius: 10px;
   width: 109%;
@@ -213,8 +213,10 @@ a .download-btn {
 }
 /***Responsive Design ***/
 @media (max-width: 768px) {
-  .profile-card{
-    width: 400px;
+  .profile-card {
+    max-width: 400px;
+    padding: 3rem;
+    margin: 1rem;
   }
 
   .about {
