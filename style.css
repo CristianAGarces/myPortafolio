@@ -130,7 +130,7 @@ h2 {
   font-size: 17px;
   padding: 1rem 3rem;
   border-radius: 30px;
-  margin-top: 1.5rem;
+  margin-top: 10pxrem;
   border: none;
   transition: 0.5s;
 }
@@ -142,6 +142,18 @@ a .download-btn {
   scale: 1.1;
   border: 2px solid #0d88d4;
   background-color: #333;
+}
+
+.profile-details p{
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.profile-details p a{
+  color: #0d88d4;
+}
+.profile-details p a:hover{
+  color: red;
 }
 /*****about section ****/
 .about {
